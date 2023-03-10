@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
  *
  */
 @Service
-public class InvokeTiming {
+public class AutoInvokeExecutionTimeCheck {
 
 	/**
 	 * List all implementations of IncDec and it is usually used to apply Chain of
@@ -40,7 +40,7 @@ public class InvokeTiming {
 
 			// Only my annotation Timing for this objective of calculating time of the
 			// execution
-			Timing annotation = method.getAnnotation(Timing.class);
+			ExecutionTimeCheck annotation = method.getAnnotation(ExecutionTimeCheck.class);
 			if (annotation != null) {
 				/*
 				 * NOTE: I usually write comments of my ideas then I add code so it is easier to

@@ -1,7 +1,10 @@
-package com.tasks.one.first;
+package com.tasks.one.first.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import com.tasks.one.first.MyIncDec;
+import com.tasks.one.first.MyIncDecSquare;
 
 /**
  * Configuration class to setup default values for beans that need to be
@@ -12,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
  *
  */
 @Configuration
-public class ConfigurationClass {
+public class IncDecConfigurationClass {
 
 	/**
 	 * Default parameters for auto creation of the bean {@link MyIncDec}

@@ -13,10 +13,10 @@ public interface IncDec {
 	 * that that method needs to be checked
 	 */
 	
-	@Timing
+	@ExecutionTimeCheck
 	void increment();
 
-	@Timing
+	@ExecutionTimeCheck
 	void decrement();
 
 }

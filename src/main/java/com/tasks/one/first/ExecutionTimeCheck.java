@@ -14,6 +14,11 @@ import java.lang.annotation.Target;
  */
 @Target({ ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Timing {
+public @interface ExecutionTimeCheck {
+
+	/*
+	 * This annotation is placed on the interface causing all implementations to be
+	 * checked
+	 */
 
 }
